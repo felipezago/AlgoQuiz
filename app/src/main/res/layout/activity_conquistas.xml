@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Conquistas">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            >
+
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_back"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Conquistas"
+                android:layout_gravity="center"
+                android:textSize="22sp"
+                android:layout_marginLeft="30dp"
+                android:textColor="#fff"/>
+        </Toolbar>
+
+        <Button
+            android:id="@+id/completouIntro"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_below="@+id/toolbar"
+            android:layout_margin="35dp"
+            android:background="@drawable/trophy" />
+
+        <Button
+            android:id="@+id/completouMedio"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/completouIntro"
+            android:layout_margin="35dp"
+            android:background="@drawable/medal" />
+
+        <Button
+            android:id="@+id/completouQuizz"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_below="@+id/completouIntro"
+            android:layout_margin="35dp"
+            android:background="@drawable/diploma" />
+
+        <Button
+            android:id="@+id/primeiroLugar"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+
+            android:layout_below="@+id/completouIntro"
+            android:layout_toRightOf="@id/completouQuizz"
+            android:layout_margin="35dp"
+
+            android:background="@drawable/medalha"
+            />
+
+        <Button
+            android:id="@+id/maisdevinte"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_below="@+id/completouQuizz"
+            android:layout_margin="35dp"
+            android:background="@drawable/trofeu" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

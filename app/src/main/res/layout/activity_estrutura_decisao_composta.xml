@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Intermediário.EstruturaDecisaoComposta">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+
+            >
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_back"
+                />
+
+        </Toolbar>
+
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_below="@id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Estrutura If Else-if"
+            android:textColor="#000000"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A estrutura if-else é conhecida como
+estrutura simples de condição. Porém, existe também a estrutura composta,
+conhecida como if else-if."
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/titulo"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:id="@+id/desc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Esta, por sua vez, é muito semelhante ao
+if-else simples. A diferença é que é possível fazer mais validações/condições
+.Abaixo, uma imagem demonstrando a declaração e
+sintaxe de uma estrutura de decisão composta."
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/desc"
+            android:layout_margin="15dp"/>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="357dp"
+            android:layout_height="226dp"
+            android:layout_below="@id/desc2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/elseif" />
+
+        <Button
+            android:id="@+id/btnProx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc3"
+            android:text="Próximo"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+            android:background="#FF0000"/>
+
+        <TextView
+            android:id="@+id/desc3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No código acima, é atribuido um valor 22 à
+variável 'time', e na condição é verificado se (if) a variável possuir um valor
+menor que 10. Como esta condição é falsa, seguimos para o 'else if', onde é
+verificado se a variável é menor que 20, o que também é falso, entrando na ultima condição."
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/img"
+            android:layout_margin="15dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

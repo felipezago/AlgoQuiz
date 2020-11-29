@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Avançado.AssuntosAv">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+
+            >
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_back"
+                />
+
+        </Toolbar>
+
+
+        <Button
+            android:id="@+id/btnMetodos"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:layout_below="@+id/toolbar"
+            android:background="@drawable/metodo"
+            android:enabled="true"
+            android:backgroundTint="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/txMetodos"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnMetodos"
+            android:text="Métodos"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/btnExcep"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:layout_below="@+id/txMetodos"
+            android:background="@drawable/erro"
+            android:enabled="true"
+            android:backgroundTint="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/txExcep"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnExcep"
+            android:text="Exceptions"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/btnLista"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:background="@drawable/chave"
+            android:enabled="true"
+            android:layout_below="@id/txExcep"
+            android:backgroundTint="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/txLista"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnLista"
+            android:text="Array/Listas"
+            android:layout_marginTop="5dp"/>
+
+
+        <Button
+            android:id="@+id/btnForEach"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:background="@drawable/lista"
+            android:enabled="true"
+            android:layout_below="@id/txLista"
+            android:backgroundTint="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/txForEach"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnForEach"
+            android:text="For Each"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

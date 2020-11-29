@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Perfil">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+
+            >
+
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_back"
+                />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar"
+                android:text="Perfil"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="15dp"
+                android:textColor="#fff"
+                />
+        </Toolbar>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fotoPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/trofeu"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="15dp"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/nick2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NICK"
+            android:textSize="25sp"
+            android:textColor="#fff"
+            android:layout_below="@id/fotoPerfil"
+            android:layout_marginTop="15dp"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  AQUI O EMAIL"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:layout_below="@id/relativo"
+        android:drawableLeft="@drawable/ic_email"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/nick"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  AQUI O nick"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:layout_below="@id/email"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/ic_pessoa"
+        />
+
+    <TextView
+        android:id="@+id/sexo"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" AQUI O sexo"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:layout_below="@id/nick"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/ic_pessoas"
+        />
+
+        <TextView
+            android:id="@+id/aviso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Para alterar a foto de perfil,  basta clicar na mesma."
+            android:textColor="#000"
+            android:layout_marginTop="25dp"
+            android:textSize="15sp"
+            android:layout_below="@id/sexo"
+            android:layout_marginLeft="20dp"
+            />
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

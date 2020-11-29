@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "388961275861",
+    "firebase_url": "https://projetointegrador-e2d4b.firebaseio.com",
+    "project_id": "projetointegrador-e2d4b",
+    "storage_bucket": "projetointegrador-e2d4b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388961275861:android:79f948a26fb2be7746f75c",
+        "android_client_info": {
+          "package_name": "br.com.ifpr.projetointegrador"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "388961275861-ucsepbrrbeguo69om34at73l9bhqkhhf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.ifpr.projetointegrador",
+            "certificate_hash": "01ddaaf03acbfdbf8662155e40a9ca33387074ce"
+          }
+        },
+        {
+          "client_id": "388961275861-cc7t4llnb182nd30u4lcos4uuqlrgc78.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUMW22Uu4xYdUgD7yGfJqw0EJeVW81u7k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "388961275861-cc7t4llnb182nd30u4lcos4uuqlrgc78.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

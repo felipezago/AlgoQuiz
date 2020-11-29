@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Intermediário.EstruturaRepeticao">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+
+            >
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_back"
+                />
+
+        </Toolbar>
+
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_below="@id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Estruturas de Repetição"
+            android:textColor="#000000"
+            android:layout_marginLeft="15dp"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estruturas de repetição facilitam muito
+            o processo de desenvolvimento de um sistema. Com as estruturas
+de repetição, é possível automatizar processos que seriam feitos
+manualmente."
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/titulo"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:id="@+id/desc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estruturas de repetição se repetem
+até que a condição passada no parâmetro seja verdadeira. Abaixo um exemplo da
+sintaxe de uma estrutura 'while'."
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/desc"
+            android:layout_margin="15dp"/>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="357dp"
+            android:layout_height="226dp"
+            android:layout_below="@id/desc2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/exwhile" />
+
+        <Button
+            android:id="@+id/btnProx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc3"
+            android:text="Próximo"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+            android:background="#FF0000"/>
+
+        <TextView
+            android:id="@+id/desc3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No código acima , é atribuido um valor 0 à variável 'i',
+e noparâmetro é informado i maior que 5, ou seja, enquanto o valorda variável i for menor que 5, o comando será executado. O comando i++
+é utilizado para incrementar o valor da variável i, em 1."
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/img"
+            android:layout_margin="15dp"/>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

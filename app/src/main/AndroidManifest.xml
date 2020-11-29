@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.ifpr.projetointegrador">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="AlgoQuiz"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.Perfil"></activity>
+        <activity android:name=".Activity.Conquistas" />
+        <activity android:name=".Activity.Ranqueamento" />
+        <activity android:name=".Activity.CadastroUsuario" />
+        <activity android:name=".Activity.ContatoProfessor" />
+        <activity android:name=".Avançado.Array" />
+        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Avançado.Exceptions" />
+        <activity android:name=".Avançado.Metodos" />
+        <activity android:name=".Avançado.ForEach" />
+        <activity android:name=".Avançado.AssuntosAv" />
+        <activity android:name=".Questoes.QuestoesAv" />
+        <activity android:name=".Questoes.QuestoesMedio" />
+        <activity android:name=".Intermediário.EstruturaDecisaoComposta" />
+        <activity android:name=".Intermediário.For" />
+        <activity android:name=".Intermediário.SwitchCase" />
+        <activity android:name=".Intermediário.EstruturaRepeticao" />
+        <activity android:name=".Avançado.Listas" />
+        <activity android:name=".Intermediário.AssuntosMedio" />
+        <activity android:name=".Introdução.ComentariosMult" />
+        <activity android:name=".Introdução.ComentariosSimples" />
+        <activity android:name=".Introdução.Operadores" />
+        <activity android:name=".Intermediário.EstruturaDecisao" />
+        <activity android:name=".Introdução.TiposVariaveis" />
+        <activity android:name=".Introdução.IntroJava" />
+        <activity android:name=".Introdução.AssuntosIntro" />
+        <activity android:name=".Introdução.IntroVariaveis" />
+        <activity android:name=".Questoes.QuestoesIntroducao" />
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
+
+        <activity
+            android:name=".Activity.MenuPrincipal"
+            android:label="@string/title_activity_menu_principal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activity.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

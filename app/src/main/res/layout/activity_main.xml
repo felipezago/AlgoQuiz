@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity"
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/algoquiz"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/ic_person"
+        android:hint="Email"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:id="@+id/edtSenha"
+        android:layout_below="@id/edtEmail"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff"
+        android:layout_marginLeft="50dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSenha"
+        android:layout_centerInParent="true"
+        android:background="#F32121"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="50dp"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/txRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn"
+        android:text="Ainda não é cadastrado?"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginRight="50dp"
+        />
+
+</RelativeLayout>

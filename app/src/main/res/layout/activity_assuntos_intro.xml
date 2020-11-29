@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Introdução.AssuntosIntro">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+
+            >
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_back"
+                />
+
+        </Toolbar>
+
+
+        <Button
+        android:id="@+id/btnJava"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/java"
+        android:enabled="true"
+        />
+
+        <TextView
+            android:id="@+id/txJava"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnJava"
+            android:text="Introdução ao Java"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/btnComent"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:layout_below="@+id/txJava"
+            android:background="@drawable/comment"
+            android:enabled="true"
+            android:backgroundTint="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/txComent"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnComent"
+            android:text="Comentários"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/btnVariaveis"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:background="@drawable/variable"
+            android:enabled="true"
+            android:layout_below="@id/txComent"
+            android:backgroundTint="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/txVar"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnVariaveis"
+            android:text="Variáveis"
+            android:layout_marginTop="5dp"/>
+
+
+        <Button
+            android:id="@+id/btnOp"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_margin="30dp"
+            android:background="@drawable/operator"
+            android:enabled="true"
+            android:layout_below="@id/txVar" />
+
+
+        <TextView
+            android:id="@+id/txOp"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnOp"
+            android:text="Operadores" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

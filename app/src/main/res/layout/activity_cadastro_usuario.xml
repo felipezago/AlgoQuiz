@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CadastroUsuario">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+
+            >
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_back"
+                />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar"
+                android:text="Cadastro de Usuário"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="15dp"
+                android:textColor="#fff"
+                />
+
+
+        </Toolbar>
+
+        <TextView
+            android:id="@+id/txEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:text="Email"
+            android:textSize="25sp"
+            android:layout_margin="15dp"
+            android:textColor="#000000"
+            />
+        
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/txEmail"
+            android:layout_margin="15dp"
+            android:background="#ffffff"
+            android:hint="Informe seu Email"
+            />
+
+        <TextView
+            android:id="@+id/txSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtEmail"
+            android:text="Senha"
+            android:inputType="textEmailAddress"
+            android:textSize="25sp"
+            android:layout_margin="15dp"
+            android:textColor="#000000"
+
+            />
+
+        <EditText
+            android:id="@+id/edtSenha"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/txSenha"
+            android:layout_margin="15dp"
+            android:background="#ffffff"
+            android:inputType="textPassword"
+            android:hint="Digite a Senha"
+            />
+
+        <TextView
+            android:id="@+id/txNick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtEmail"
+            android:text="Nick"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/txSenha"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:id="@+id/edtNick"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/txSenha"
+            android:layout_margin="15dp"
+            android:layout_toRightOf="@id/edtSenha"
+            android:background="#ffffff"
+            android:hint="Digite o Nick"
+            android:maxLength="8"
+            />
+
+        <TextView
+            android:id="@+id/txSexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtSenha"
+            android:layout_marginTop="20dp"
+            android:text="Sexo"
+            android:layout_margin="15dp"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:layout_below="@id/txSexo"/>
+        <Button
+            android:id="@+id/btnSalvar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/spinner"
+            android:layout_margin="15dp"
+            android:text="Salvar"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            />
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Introdução.TiposVariaveis">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+
+            >
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_back"
+                />
+
+        </Toolbar>
+
+
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Tipos de Variáveis"
+            android:textColor="#000000"
+            android:layout_below="@+id/toolbar"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ao criar variáveis, devemos nos ater aos tipos
+de dados que serão armazenados nestas. Existem tipos inteiros (int),
+reais (float), booleanos (boolean), caracteres (char) e cadeias de caracteres (String)."
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/titulo"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:id="@+id/desc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abaixo, uma imagem demonstrando a declaração e
+sintaxe dos tipos de variáveis mencionados acima."
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/desc"
+            android:layout_margin="15dp"/>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="347dp"
+            android:layout_height="276dp"
+            android:layout_below="@id/desc2"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/tipos" />
+
+        <Button
+            android:id="@+id/btnProx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img"
+            android:text="Voltar"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+            android:background="#FF0000"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

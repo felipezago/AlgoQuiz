@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Intermediário.SwitchCase">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+
+            >
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_back"
+                />
+
+        </Toolbar>
+
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_below="@id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Switch Case"
+            android:textColor="#000000"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Switch é uma forma alternativa de utilizar
+estruturas de decisão. Na utilização de switch, é recebido uma
+variável e os blocos 'case' são utilizados para definir o que será
+feito se a variável possuir o valor especificado."
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/titulo"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:id="@+id/desc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abaixo, uma imagem demonstrando a declaração e
+sintaxe de uma estrutura de decisão switch."
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/desc"
+            android:layout_margin="15dp"/>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="158dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/desc2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/exswitch" />
+
+        <Button
+            android:id="@+id/btnProx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img"
+            android:text="Próximo"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+            android:background="#FF0000"/>
+
+        <TextView
+            android:id="@+id/desc3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@id/img"
+            android:text="No código ao lado, a saída será 'Thursday',
+conforme o valor 4 atribuido a variável.ss"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

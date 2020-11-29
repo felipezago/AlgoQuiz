@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Introdução.ComentariosSimples">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+
+            >
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_back"
+                />
+
+        </Toolbar>
+
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_below="@id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Comentários Simples"
+            android:textColor="#000000"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comentários podem ser usados para explicar
+códigos, e os fazer mais legíveis. Também pode ser utilizado para
+prevenir a execução de certas linhas de código quando estiver sendo
+testado alguns comandos."
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/titulo"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:id="@+id/desc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comentários simples, ou comentários
+de uma linha, começam com duas barras (//). Qualquer texto que
+estiver após as barras até o final da linha será ignorado, e não]
+será executado. Abaixo um exemplo de comentários de uma linha."
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/desc"
+            android:layout_margin="15dp"/>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/comentariosimples" />
+
+        <Button
+            android:id="@+id/btnProx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img"
+            android:text="Próximo"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+            android:background="#FF0000"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

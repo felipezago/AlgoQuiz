@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.MenuPrincipal"
+    tools:showIn="@layout/app_bar_menu_principal">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+
+            android:id="@+id/btnIntro"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/operator"
+            android:enabled="true"
+            android:backgroundTint="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/txIntroducao"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnIntro"
+            android:text="Introdução"
+            android:layout_marginTop="30dp"/>
+
+
+        <Button
+            android:id="@+id/btnMedio"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_margin="30dp"
+            android:background="@drawable/loop"
+            android:enabled="false"
+            android:layout_below="@id/txIntroducao" />
+
+
+        <Button
+            android:id="@+id/moedaMedio"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_below="@id/txIntroducao"
+            android:layout_marginTop="47dp"
+            android:layout_marginRight="35dp"
+            android:layout_toLeftOf="@+id/btnMedio"
+            android:background="@drawable/coins" />
+
+        <TextView
+            android:id="@+id/txMoedaMeio"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_below="@id/moedaMedio"
+            android:layout_marginRight="60dp"
+            android:text="6"
+            android:textSize="25sp"
+            android:layout_toLeftOf="@+id/btnMedio" />
+
+        <TextView
+            android:id="@+id/txMedio"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnMedio"
+            android:text="Intermediário" />
+
+        <Button
+            android:id="@+id/moedaAv"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_below="@id/txMedio"
+            android:layout_marginTop="47dp"
+            android:layout_marginRight="35dp"
+            android:layout_toLeftOf="@+id/btnAv"
+            android:background="@drawable/coins" />
+
+        <TextView
+            android:id="@+id/txMoedaAv"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_below="@id/moedaAv"
+            android:layout_marginRight="55dp"
+            android:text="12"
+            android:textSize="25sp"
+            android:layout_toLeftOf="@+id/btnMedio" />
+
+        <Button
+            android:id="@+id/btnAv"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/chaves"
+            android:enabled="false"
+            android:layout_below="@id/txMedio"
+            />
+
+
+        <TextView
+            android:id="@+id/txAV"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnAv"
+            android:text="Avançado" />
+
+        <ImageView
+            android:id="@+id/imgInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txAV"
+            android:src="@drawable/ic_info"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <TextView
+            android:id="@+id/txInfo"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:layout_marginTop="62dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgInfo"
+            android:layout_below="@id/txAV"
+            android:layout_centerHorizontal="true"
+            android:text="Clique para mais informações" />
+
+    </RelativeLayout>
+
+</ScrollView>

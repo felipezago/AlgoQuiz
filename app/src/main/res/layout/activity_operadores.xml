@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Introdução.Operadores">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+
+            >
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_back"
+                />
+
+        </Toolbar>
+
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_below="@id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Operadores"
+            android:textColor="#000000"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Operadores são utilizados para executar
+operações (na maioria das vezes matemáticas), em variáveis e
+valores."
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/titulo"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:id="@+id/desc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abaixo, uma tabela contendo informações
+sobre os operadores mais utilizados na programação."
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/desc"
+            android:layout_margin="15dp"/>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="376dp"
+            android:layout_height="134dp"
+            android:layout_below="@id/desc2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/operadores" />
+
+        <Button
+            android:id="@+id/btnProx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc4"
+            android:text="Realizar o Teste"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+            android:background="#FF0000"/>
+
+        <TextView
+            android:id="@+id/desc3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conforme percebemos na imagem acima, os
+operadores na programação são muito parecidos com os operadores na
+matemática. Abaixo, um exemplo dessas operações em Java."
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/img"
+            android:layout_margin="15dp"/>
+
+        <ImageView
+            android:id="@+id/imgEx"
+            android:layout_width="380dp"
+            android:layout_height="105dp"
+            android:layout_below="@id/desc3"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/opex" />
+
+        <TextView
+            android:id="@+id/desc4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OBS.: O operador '=' é o opeador de ATRIBUIÇÃO,
+o operador de igualdade é '=='."
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imgEx"
+            android:layout_margin="15dp"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>
